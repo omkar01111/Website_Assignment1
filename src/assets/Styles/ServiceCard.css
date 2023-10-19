@@ -1,0 +1,81 @@
+.Service_card {
+   
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    transition:0.5s ease
+    
+  }
+  img {
+    height:100%;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+   margin: auto;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+     
+      overflow: hidden;
+    transition: .5s;
+  }
+  .intro{
+      height: 70px;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: -15px;
+      background:rgb(27 27 27 / 43%);
+      color: white;
+      transition: .5s ease-in-out;
+  }
+  
+  .card_heading{
+      margin:10px 0;
+      font-size: 20px;
+      border-bottom: 1px solid grey;
+    
+      padding-bottom: 7px;
+  
+  }
+  .hiden_Info{
+  visibility: hidden; 
+   opacity: 0;
+  }
+  .Service_card:hover{
+      cursor:pointer;
+      transform: scale(1.01);
+  }
+  
+  .Service_card:hover .intro{
+    transform: translateY(-230px);
+    height: 250px; 
+    background-color: black;
+    bottom: -230px;
+  
+  
+  }
+  .Service_card:hover .hiden_Info{
+      opacity: 1;
+      visibility: visible;
+  }
+  .Service_card:hover img{
+      transform: scale(1.1)rotate(-3deg);
+      /* height: 250px; */
+  }
+  
+  .inner_Info{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+  
+  }
+  .card_des{
+    font-size: 0.9rem;
+    padding: 0 20px;
+  }

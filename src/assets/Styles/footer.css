@@ -1,0 +1,24 @@
+ footer{
+  position: relative;
+  width: 100%;
+ 
+
+ }
+ a {
+  color: grey;
+}
+
+.icon_Bg:hover,
+ a:hover {
+  color: white !important;
+  transition: 0.5s ease-in-out;
+}
+
+/* .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: red url();
+} */

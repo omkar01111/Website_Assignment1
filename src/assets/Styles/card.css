@@ -1,0 +1,119 @@
+.margin {
+  margin: 0%;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.card_container {
+  width: 285px;
+  height: 420px;
+}
+.card_container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  /* background-image: url(../img/bg3.jpg); */
+}
+.front > .bg_img {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  border-radius: 8px 8px 0 0px;
+}
+.front > .profile_img {
+  width: 129px;
+  height: 212px;
+  position: relative;
+  top: 14%;
+  margin: 0 auto;
+}
+.profile_img > img {
+  border: 5px solid white;
+
+  width: 100%;
+  height: 129px;
+  border-radius: 72px;
+}
+.front_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 30px;
+  flex-wrap: wrap;
+}
+.title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.position {
+  color: darkgrey;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.des {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.back {
+  background-color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+.head_info>p{
+  
+  font-size: 0.9rem;
+  color: grey;
+  border-bottom: 1px dotted gray;
+  padding-bottom: 8px;
+  text-transform: capitalize;
+}
+.mid_info{
+  margin: 20px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.profile_info{
+  flex-Direction:column;
+  border-right:1px dotted gray;
+  gap: 2px;
+  padding: 0 8px;
+  
+}
+.count{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.profile_info>p{
+  color: darkgrey;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}

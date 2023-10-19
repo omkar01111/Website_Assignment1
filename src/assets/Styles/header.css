@@ -1,0 +1,36 @@
+.navBody {
+  background-color: white;
+
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+}
+.NavTitle {
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+  font-weight: 600;
+  position: relative;
+  background-color: none;
+  cursor: pointer;
+  border: none;
+
+}
+.NavTitle::after {
+  content: " ";
+  position: absolute;
+background-color: red;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.NavTitle.active::after,
+.NavTitle:hover::after,
+.NavTitle:hover,
+.active {
+  color: red !important;
+  transform: scale(1);
+}
